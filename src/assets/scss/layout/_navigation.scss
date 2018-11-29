@@ -1,0 +1,72 @@
+nav.primary-nav {
+  background: url("assets/images/nav-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat no-repeat;
+  .collapse {
+    .phone-item {
+      &:not(:first-child) {
+        margin-top: 7px;
+      }
+      .icon {
+        margin-right: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .number {
+        a {
+          @include font("LatoLight", 17px, 300, normal);
+          color: #000;
+          transition: all 0.5s ease-in-out;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    .action-item {
+      margin-left: 30px;
+      a {
+        @include font("PtSans", 15px, 700, normal);
+        padding: 8px 25px;
+        color: #fff;
+        background-color: #55a3d4;
+        border-radius: 19px;
+      }
+    }
+  }
+}
+
+nav.secondary-nav {
+  background: url("assets/images/secondary-nav-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat no-repeat;
+  padding: 0;
+  ul {
+    justify-content: center;
+    li {
+      padding: 10px 15px;
+      position: relative;
+      &:last-child {
+        &:after {
+          display: none;
+        }
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 1px;
+        height: 100%;
+        background-color: #fff;
+        opacity: 0.3;
+      }
+    }
+    a {
+      @include font("MyriadPro", 17px, 900, normal);
+      text-transform: uppercase;
+      color: #fff;
+    }
+  }
+}
