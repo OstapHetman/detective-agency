@@ -684,7 +684,7 @@
             <small>Пн-Вс, 09-00:20-00</small>
             <a class="email" href="mailto:mail_you@gmail.com">mail_you@gmail.com</a>
             <div class="button">
-              <button class="btn">Бесплатная консультация</button>
+              <button class="btn" data-toggle="modal" data-target="#signup">Бесплатная консультация</button>
             </div>
           </div>
         </div>
@@ -704,6 +704,47 @@
       </div>
     </footer>
     <!-- End Footer -->
+
+     <!-- Start Modal:  Бесплатная консультация -->
+     <div class="modal fade mainModals" id="signup" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <div class="container">
+                      <h1 class="text-center">
+                        Бесплатная консультация
+                      </h1>
+                      <p class="text-center">Введите ваше имя, город  и номер телефона, специалист компании свяжется
+                          с вами и ответит на ваши вопросы</p>
+                      <form>
+                          <div class="form-group">
+                              <input type="text" class="form-control" name="name" placeholder="Укажите имя">
+                          </div>
+                          <div class="form-group">
+                            <input type="text" class="form-control" name="city" placeholder="Укажите Ваш город">
+                          </div>
+                          <div class="form-group">
+                              <input type="text" class="form-control" name="phone" placeholder="Укажите номер телефона"
+                                  required>
+                          </div>
+                          <div class="form-group">
+                              <input type="hidden" id="hiddenInput">
+                          </div>
+                          <div class="form-group text-center">
+                              <input class="btn" type="submit" value="Получить бесплатную консультацию">
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- End Modal: Записаться на прием -->
 
     <!-- Import Scripts -->
     <script src="assets/js/jquery-3.3.1.min.js"></script>
