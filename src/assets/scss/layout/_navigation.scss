@@ -43,6 +43,66 @@ nav.primary-nav {
       }
     }
   }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .navbar-brand {
+      img {
+        max-width: 150px;
+        height: auto;
+      }
+    }
+    .collapse {
+      .phone-item {
+        .number {
+          a {
+            font-size: 14px;
+          }
+        }
+      }
+      .action-item {
+        a {
+          font-size: 14px;
+          padding: 5px 15px;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    .navbar-brand {
+      img {
+        max-width: 125px;
+        height: auto;
+      }
+    }
+    .navbar-toggler {
+      &:focus {
+        outline: 0;
+      }
+      i.fa {
+        color: #0a4f91;
+        font-size: 25px;
+        z-index: 101;
+      }
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    .navbar-brand {
+      img {
+        max-width: 125px;
+        height: auto;
+      }
+    }
+    .navbar-toggler {
+      z-index: 101;
+      &:focus {
+        outline: 0;
+      }
+      i.fa {
+        color: #0a4f91;
+        font-size: 25px;
+      }
+    }
+  }
 }
 
 nav.secondary-nav {
@@ -109,6 +169,79 @@ nav.secondary-nav {
 
         to {
           -webkit-mask-position: -50%;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    ul {
+      li {
+        a {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  &.primary-nav {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    .navbar-brand {
+      z-index: 101;
+      img {
+        max-width: 150px;
+      }
+    }
+  }
+  &.secondary-nav {
+    padding: 0;
+  }
+  a.navbar-brand {
+    font-size: 32px;
+  }
+  ul {
+    li {
+      a {
+        text-align: center;
+        font-size: 17px;
+        &.btn {
+          font-size: 15px;
+          width: 50%;
+          margin: auto;
+        }
+      }
+    }
+  }
+  .navbar-toggler.open {
+    position: fixed;
+    right: 24px;
+  }
+  .navbar-collapse {
+    background: rgba(255, 255, 255, 0.93);
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 100;
+    height: 100vh;
+    transition: all 0.1s ease-in;
+    ul {
+      transition: all 0.1s ease-in;
+      height: 100%;
+      justify-content: center;
+      li {
+        a {
+          font-size: 20px;
+          color: #0a4f91;
+          padding: 0;
+          &.active {
+            &:before {
+              bottom: 0;
+              width: 20%;
+            }
+          }
         }
       }
     }

@@ -68,6 +68,9 @@ header {
   }
 
   @media screen and (min-width: 768px) and (max-width: 991px) {
+    .carousel-indicators {
+      margin-bottom: 0;
+    }
     .carousel-item {
       .carousel-caption {
         top: 40%;
@@ -130,14 +133,14 @@ header {
     }
     .carousel-item {
       img {
-        min-height: 220px;
+        min-height: 210px;
       }
       .carousel-caption {
         .head-text {
           border-top: 0;
           border-bottom: 0;
         }
-        top: 40%;
+        top: 38%;
         h5 {
           font-size: 16px;
           line-height: 22px;
