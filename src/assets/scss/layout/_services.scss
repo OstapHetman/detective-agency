@@ -130,10 +130,6 @@
         padding-top: 80px;
         padding-bottom: 50px;
         background-color: #05a4d8;
-        // background: url("assets/images/service-1.png");
-        // background-size: cover;
-        // background-position: center center;
-        // background-repeat: no-repeat no-repeat;
         transition: 0.5s ease-in-out;
         &:hover {
           text-decoration: none;
@@ -142,6 +138,48 @@
             0 0 24px rgba(0, 0, 0, 0.12);
         }
       }
+    }
+  }
+  @media screen and (max-width: 991px) {
+    .service-col .service-item {
+      max-width: unset !important;
+    }
+  }
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    .service-col .service-item {
+      a {
+        padding-top: 50px;
+        padding-bottom: 30px;
+      }
+    }
+  }
+  @media screen and (max-width: 575px) {
+    .section-title {
+      h3 {
+        font-size: 32px;
+      }
+    }
+    .service-col .service-item {
+      height: auto;
+      a {
+        height: auto;
+        padding-top: 40px;
+        padding-bottom: 20px;
+        &:hover {
+          transform: scale(1);
+        }
+      }
+      &__text {
+        p {
+          br {
+            display: none;
+          }
+        }
+      }
+    }
+    margin: 40px 0;
+    .services {
+      margin-top: 30px;
     }
   }
 }
