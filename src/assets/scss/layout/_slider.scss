@@ -1,0 +1,190 @@
+#slider {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  h2 {
+    @include font("Helvetica", 55px, 900, 2.75px);
+    color: #000000;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+  }
+  #carouselProduction {
+    .carousel-item {
+      align-self: center;
+      padding: 0;
+      div {
+        max-width: 70%;
+        img {
+          margin: auto;
+          max-width: 100%;
+          min-height: 60px;
+        }
+      }
+    }
+    a {
+      opacity: 1;
+      transition: opacity 0.7s ease;
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+    .carousel-control-next {
+      justify-content: flex-end;
+    }
+    .carousel-control-prev {
+      justify-content: flex-start;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    h2 {
+      font-size: 33px;
+    }
+    #carouselProduction {
+      a {
+        img {
+          max-width: 20px;
+        }
+      }
+      .carousel-item div {
+        max-width: 60%;
+        img {
+          min-height: 35px;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    h2 {
+      font-size: 33px;
+      line-height: 30px;
+    }
+    #carouselProduction {
+      a {
+        img {
+          max-width: 20px;
+        }
+      }
+      .carousel-item div {
+        max-width: 60%;
+        img {
+          min-height: 60px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    h2 {
+      font-size: 28px;
+      line-height: 30px;
+    }
+    #carouselProduction {
+      a {
+        img {
+          max-width: 20px;
+        }
+      }
+      .carousel-item div {
+        max-width: 60%;
+        img {
+          min-height: 60px;
+        }
+      }
+    }
+  }
+}
+// Slider
+@media (min-width: 768px) {
+  .our-production .carousel-inner .active,
+  .our-production .carousel-inner .active + .carousel-item,
+  .our-production .carousel-inner .active + .carousel-item + .carousel-item {
+    display: block;
+    transition: all 0.5s ease-in-out;
+  }
+  .our-production
+    .carousel-inner
+    .carousel-production-item.active:not(.carousel-item-right):not(.carousel-item-left),
+  .our-production
+    .carousel-inner
+    .carousel-production-item.active:not(.carousel-item-right):not(.carousel-item-left)
+    + .carousel-production-item,
+  .our-production
+    .carousel-inner
+    .carousel-production-item.active:not(.carousel-item-right):not(.carousel-item-left)
+    + .carousel-production-item
+    + .carousel-production-item {
+    transition: none;
+  }
+  .our-production .carousel-inner .carousel-item-next,
+  .our-production .carousel-inner .carousel-item-prev {
+    position: relative;
+    transform: translate3d(0, 0, 0);
+  }
+  .our-production
+    .carousel-inner
+    .active.carousel-production-item
+    + .carousel-production-item
+    + .carousel-production-item
+    + .carousel-production-item {
+    position: absolute;
+    top: 0;
+    right: -25%;
+    z-index: -1;
+    display: block;
+    display: none;
+    visibility: visible;
+    transition: all 1s ease-in-out;
+  }
+  .our-production
+    .active.carousel-item-left
+    + .carousel-item-next.carousel-item-left,
+  .our-production .carousel-item-next.carousel-item-left + .carousel-item,
+  .our-production
+    .carousel-item-next.carousel-item-left
+    + .carousel-item
+    + .carousel-item,
+  .our-production
+    .carousel-item-next.carousel-item-left
+    + .carousel-item
+    + .carousel-item
+    + .carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+    /*transition: all 4s ease-in-out;*/
+  }
+  .our-production .carousel-inner .carousel-item-prev.carousel-item-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+  .our-production
+    .active.carousel-item-right
+    + .carousel-item-prev.carousel-item-right,
+  .our-production .carousel-item-prev.carousel-item-right + .carousel-item,
+  .our-production
+    .carousel-item-prev.carousel-item-right
+    + .carousel-item
+    + .carousel-item,
+  .our-production
+    .carousel-item-prev.carousel-item-right
+    + .carousel-item
+    + .carousel-item
+    + .carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible;
+    /*transition: all 4s ease-in-out;*/
+  }
+}
