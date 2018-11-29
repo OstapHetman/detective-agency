@@ -1,0 +1,57 @@
+#our-services {
+  margin: 70px 0; // add 20pd to next section;
+  background: url("assets/images/services-bg.png");
+  background-size: auto;
+  background-repeat: no-repeat no-repeat;
+  .section-title {
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      height: 2px;
+      background-color: #05a4d8;
+      opacity: 0.25;
+    }
+    h3 {
+      @include font("PtSans", 40px, 900, 2px);
+      color: #2d77bd;
+      margin-bottom: 20px;
+    }
+  }
+  .services {
+    margin-top: 50px;
+  }
+  .service-col {
+    margin-top: 20px;
+    .service-item {
+      background-color: #05a4d8;
+      background: url("assets/images/service-1.png");
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat no-repeat;
+      &__text {
+        margin-top: 25px;
+        p {
+          @include font("MyriadPro", 20px, 400, 1px);
+          line-height: 24px;
+          color: #fff;
+        }
+      }
+      a {
+        text-align: center;
+        display: block;
+        padding-top: 80px;
+        padding-bottom: 50px;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

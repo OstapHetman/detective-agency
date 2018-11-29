@@ -27,11 +27,10 @@ Porto Shop is based on Underscores https://underscores.me/, (C) 2012-2018 Ostap,
 // ===== Layout Folder====== //
 @import "layout/navigation";
 @import "layout/header";
+@import "layout/services";
+@import "layout/advantages";
 @import "layout/footer";
 // ======================= //
 // ===== Pages Folder====== //
 @import "pages/home";
 // ======================= //
-::placeholder {
-  color: red;
-}

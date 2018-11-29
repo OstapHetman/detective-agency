@@ -1,0 +1,36 @@
+#advantages {
+  margin-top: 20px;
+  background: url("assets/images/advantages-bg.png");
+  background-size: auto;
+  background-position: center center;
+  background-repeat: no-repeat no-repeat;
+  .section-title {
+    h3 {
+      text-align: center;
+      @include font("PtSans", 55px, 900, 4.75px);
+      color: #2d77bd;
+      text-transform: uppercase;
+      padding-bottom: 10px;
+    }
+  }
+  .advantage {
+    margin-top: 90px;
+    display: flex;
+    &:nth-child(even) {
+      justify-content: flex-end;
+    }
+    // align-items: center;
+    &__text {
+      margin-left: 20px;
+      max-width: 400px;
+      h6 {
+        @include font("PtSans", 22px, 900, 1.1px);
+        color: #2d77bd;
+      }
+      p {
+        @include font("PtSans", 19px, 900, 0.95px);
+        color: #000;
+      }
+    }
+  }
+}
