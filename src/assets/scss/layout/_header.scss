@@ -46,6 +46,11 @@ header {
         background-color: #6babd9;
         opacity: 0.75;
         padding: 10px 35px;
+        transition: all 0.5s ease-in-out;
+        &:hover {
+          box-shadow: 0 0 42px 4px rgba(107, 171, 217, 0.5);
+          opacity: 1;
+        }
       }
     }
   }

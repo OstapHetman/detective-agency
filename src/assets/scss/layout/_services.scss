@@ -29,12 +29,91 @@
   }
   .service-col {
     margin-top: 20px;
+    // min-height: 305px;
+    &:nth-child(1) {
+      .service-item {
+        a {
+          background: url("assets/images/service-1.png");
+          background-size: cover;
+          background-position: center center;
+          background-repeat: no-repeat no-repeat;
+        }
+      }
+    }
+    &:nth-child(2) {
+      .service-item {
+        a {
+          background: url("assets/images/service-2.png");
+          background-size: cover;
+          background-position: center center;
+          background-repeat: no-repeat no-repeat;
+        }
+      }
+    }
+    &:nth-child(3) {
+      .service-item {
+        a {
+          background: url("assets/images/service-3.png");
+          background-size: cover;
+          background-position: center center;
+          background-repeat: no-repeat no-repeat;
+        }
+      }
+    }
+    &:nth-child(4) {
+      .service-item {
+        a {
+          background: url("assets/images/service-4.png");
+          background-size: cover;
+          background-position: center center;
+          background-repeat: no-repeat no-repeat;
+        }
+      }
+    }
+    &:nth-child(5) {
+      .service-item {
+        a {
+          background: url("assets/images/service-5.png");
+          background-size: cover;
+          background-position: center center;
+          background-repeat: no-repeat no-repeat;
+        }
+      }
+    }
+    &:nth-child(6) {
+      .service-item {
+        a {
+          background: url("assets/images/service-6.png");
+          background-size: cover;
+          background-position: center center;
+          background-repeat: no-repeat no-repeat;
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      .service-item {
+        max-width: 320px;
+      }
+    }
+    &:nth-child(5) {
+      .service-item {
+        max-width: 320px;
+      }
+    }
+    &:nth-child(8) {
+      .service-item {
+        max-width: 320px;
+      }
+    }
+    &:nth-child(11) {
+      .service-item {
+        max-width: 320px;
+      }
+    }
     .service-item {
-      background-color: #05a4d8;
-      background: url("assets/images/service-1.png");
-      background-size: cover;
-      background-position: center center;
-      background-repeat: no-repeat no-repeat;
+      height: 100%;
+      margin: auto;
       &__text {
         margin-top: 25px;
         p {
@@ -43,13 +122,24 @@
           color: #fff;
         }
       }
+
       a {
+        height: 100%;
         text-align: center;
         display: block;
         padding-top: 80px;
         padding-bottom: 50px;
+        background-color: #05a4d8;
+        // background: url("assets/images/service-1.png");
+        // background-size: cover;
+        // background-position: center center;
+        // background-repeat: no-repeat no-repeat;
+        transition: 0.5s ease-in-out;
         &:hover {
           text-decoration: none;
+          transform: scale(1.08);
+          box-shadow: 0 24px 24px rgba(0, 0, 0, 0.2),
+            0 0 24px rgba(0, 0, 0, 0.12);
         }
       }
     }

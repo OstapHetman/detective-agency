@@ -1,0 +1,125 @@
+footer {
+  background-color: #f6f6f6;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  .one {
+    p {
+      @include font("LatoLight", 12px, 300, normal);
+      color: #000;
+    }
+    .social {
+      margin-top: 20px;
+      a {
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
+        &:hover {
+          img {
+            transform: scale(1.08);
+            box-shadow: 0 24px 24px rgba(0, 0, 0, 0.2),
+              0 0 24px rgba(0, 0, 0, 0.12);
+            border-radius: 5px;
+          }
+        }
+        img {
+          width: 38px;
+          height: 38px;
+          transition: all 0.7s ease-in-out;
+        }
+        &:hover {
+          text-decoration: unset;
+        }
+      }
+    }
+  }
+  .two,
+  .three {
+    ul {
+      li {
+        a {
+          @include font("Arial", 13px, 600, 0.65px);
+          color: #464646;
+          &:hover {
+            text-decoration: none;
+          }
+          &:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 1px;
+            bottom: -2px;
+            left: 0;
+            background-color: #2d77bd;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+          }
+          &:hover:after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+          }
+          position: relative;
+        }
+      }
+    }
+  }
+  .four {
+    a {
+      @include font("LatoLight", 28px, 900, 1.4px);
+      color: #000;
+      display: block;
+      transition: all 0.5s ease-in-out;
+      &:hover {
+        text-decoration: unset;
+        color: #ffbc40;
+      }
+      &.email {
+        padding-top: 20px;
+      }
+    }
+    small {
+      display: block;
+      @include font("LatoLight", 15px, 900, 0.75px);
+      color: #464646;
+    }
+    .button {
+      padding-top: 20px;
+      button {
+        @include font("PtSans", 15px, 700, normal);
+        padding: 8px 25px;
+        color: #fff;
+        background-color: #55a3d4;
+        border-radius: 19px;
+        position: relative;
+        transition: all 0.5s ease-in-out;
+        &:hover {
+          box-shadow: 0 0 42px 4px rgba(85, 163, 212, 0.5);
+          transform: scale(1.03);
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+  .copyright {
+    p {
+      @include font("LatoLight", 13px, 300, normal);
+      color: #000000;
+    }
+  }
+  .developer {
+    padding-top: 10px;
+    p,
+    a {
+      @include font("LatoLight", 13px, 300, normal);
+      color: #464646;
+      transition: color 0.5s ease-in-out;
+    }
+    a {
+      text-decoration: underline;
+      transition: all 0.5s ease-in-out;
+    }
+    a:hover {
+      color: #dd221c;
+    }
+  }
+}
