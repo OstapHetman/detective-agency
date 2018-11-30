@@ -1,0 +1,113 @@
+#services-page {
+  margin-top: 30px;
+  padding-top: 25px;
+  background: url("assets/images/services-bg.png");
+  background-size: auto;
+  background-repeat: no-repeat no-repeat;
+  .page-title {
+    h2 {
+      @include font("PtSans", 40px, 900, 2px);
+      color: #000000;
+    }
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      height: 2px;
+      background-color: #05a4d8;
+      opacity: 0.25;
+    }
+  }
+  .main-content {
+    margin-top: 37px;
+    .page-text {
+      background-color: rgba(5, 164, 216, 0.06);
+      font-family: "LatoLight", sans-serif;
+      font-weight: 600;
+      letter-spacing: 1px;
+      padding: 50px 20px 60px 20px;
+      p {
+        font-size: 15px;
+        color: #000;
+        line-height: 25px;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "LatoLight", sans-serif;
+        font-weight: bold;
+        color: #0a4f91;
+        font-size: 20px;
+        line-height: 25px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+      h3.special-text {
+        color: #febf34;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+// All Services
+#all-services {
+  margin-top: 20px;
+  .service-item {
+    margin-top: 50px;
+    &__image {
+      img {
+        width: 100%;
+      }
+    }
+    &__text {
+      background-color: #f0fafd;
+      padding: 20px 10px;
+      p {
+        @include font("MyriadPro", 20px, 400, 1px);
+        color: #000000;
+      }
+      a {
+        @include font("PtSans", 15px, 700, normal);
+        color: #fefefe;
+        border-radius: 19px;
+        background-image: linear-gradient(
+          to right,
+          #5095d7 0%,
+          #0a4f91 51%,
+          #5297d9 100%
+        );
+        padding: 12px 50px;
+        display: inline-block;
+        transition: all 0.5s ease-in-out;
+        &:hover {
+          box-shadow: 0 0 42px 4px rgba(85, 163, 212, 0.5);
+          transform: scale(1.03);
+          opacity: 0.8;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 575px) {
+    .service-item {
+      &__text {
+        p {
+          font-size: 16px;
+        }
+        a {
+          padding: 12px 35px;
+        }
+      }
+    }
+  }
+}
