@@ -1,4 +1,4 @@
-#services-page {
+#blog-page {
   margin-top: 30px;
   padding-top: 25px;
   background: url("assets/images/services-bg.png");
@@ -24,63 +24,7 @@
       opacity: 0.25;
     }
   }
-  .main-content {
-    margin-top: 37px;
-    .page-text {
-      background-color: rgba(5, 164, 216, 0.06);
-      font-family: "LatoLight", sans-serif;
-      font-weight: 600;
-      letter-spacing: 1px;
-      padding: 50px 20px 60px 20px;
-      p {
-        font-size: 15px;
-        color: #000;
-        line-height: 25px;
-      }
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        font-family: "LatoLight", sans-serif;
-        font-weight: bold;
-        color: #0a4f91;
-        font-size: 20px;
-        line-height: 25px;
-        margin-top: 40px;
-        margin-bottom: 40px;
-      }
-      h3.special-text {
-        color: #febf34;
-        margin-bottom: 0;
-      }
-    }
-  }
-  // Start Media query
-  @media screen and (max-width: 575px) {
-    .main-content {
-      .page-text {
-        padding: 35px 15px 35px 15px;
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-          font-size: 18px;
-          margin-top: 20px;
-          margin-bottom: 20px;
-        }
-      }
-    }
-  }
-}
-
-// All Services
-#all-services {
-  margin-top: 20px;
-  .service-item {
+  .blog-item {
     margin-top: 50px;
     &__image {
       img {
@@ -117,7 +61,7 @@
     }
   }
   @media screen and (max-width: 575px) {
-    .service-item {
+    .blog-item {
       &__text {
         p {
           font-size: 16px;

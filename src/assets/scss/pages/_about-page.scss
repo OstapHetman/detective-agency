@@ -33,7 +33,7 @@
       letter-spacing: 1px;
       padding: 50px 20px 60px 20px;
       p {
-        font-size: 14px;
+        font-size: 17px;
         color: #000;
         line-height: 25px;
       }
@@ -46,7 +46,7 @@
         font-family: "LatoLight", sans-serif;
         font-weight: bold;
         color: #0a4f91;
-        font-size: 20px;
+        font-size: 23px;
         line-height: 25px;
         margin-top: 40px;
         margin-bottom: 40px;
@@ -54,6 +54,24 @@
       h3.special-text {
         color: #febf34;
         margin-bottom: 0;
+      }
+    }
+  }
+  // Start Media query
+  @media screen and (max-width: 575px) {
+    .main-content {
+      .page-text {
+        padding: 35px 15px 35px 15px;
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          font-size: 18px;
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
       }
     }
   }
@@ -116,6 +134,86 @@
         box-shadow: 0 0 42px 4px rgba(85, 163, 212, 0.5);
         transform: scale(1.02);
         opacity: 0.8;
+      }
+    }
+  }
+  // Media query
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    .left {
+      &:after {
+        right: 20px;
+      }
+    }
+    .youtube {
+      iframe {
+        max-width: 400px;
+      }
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .left {
+      text-align: center;
+      &:after {
+        display: none;
+      }
+    }
+    .right {
+      padding-top: 40px;
+    }
+    .youtube {
+      iframe {
+        max-width: 550px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    .title {
+      h3 {
+        font-size: 26px;
+        line-height: 30px;
+      }
+    }
+    .left {
+      text-align: center;
+      &:after {
+        display: none;
+      }
+    }
+    .right {
+      padding-top: 40px;
+    }
+    .youtube {
+      iframe {
+        max-width: 550px;
+      }
+    }
+  }
+  @media screen and (max-width: 575px) {
+    .title {
+      h3 {
+        font-size: 21px;
+        line-height: 30px;
+        letter-spacing: normal;
+      }
+    }
+    .left {
+      text-align: center;
+      &:after {
+        display: none;
+      }
+    }
+    .right {
+      padding-top: 40px;
+    }
+    .youtube {
+      iframe {
+        max-width: 550px;
+      }
+    }
+    form {
+      input[type="submit"] {
+        font-size: 21px;
       }
     }
   }
