@@ -27,8 +27,20 @@
   .blog-item {
     margin-top: 50px;
     &__image {
+      position: relative;
       img {
         width: 100%;
+      }
+      .date {
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: 0 0 10px;
+        background-color: #0a4f91;
+        @include font("MyriadPro", 16px, 400, 1px);
+        color: #fff;
+        font-style: italic;
+        padding: 8px 13px;
       }
     }
     &__text {
@@ -67,7 +79,7 @@
           font-size: 16px;
         }
         a {
-          padding: 12px 35px;
+          padding: 10px 35px;
         }
       }
     }
