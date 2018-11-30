@@ -62,6 +62,13 @@
     .main-content {
       .page-text {
         padding: 35px 15px 35px 15px;
+        p,
+        li,
+        a,
+        ul,
+        ol {
+          font-size: 15px;
+        }
         h1,
         h2,
         h3,
