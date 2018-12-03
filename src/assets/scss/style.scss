@@ -23,6 +23,9 @@ Porto Shop is based on Underscores https://underscores.me/, (C) 2012-2018 Ostap,
 // ===== Components Folder====== //
 @import "components/button";
 @import "components/modal";
+@import "components/contact-form7";
+@import "components/pagination";
+@import "components/success-mgs";
 // ======================= //
 // ===== Layout Folder====== //
 @import "layout/navigation";
@@ -39,4 +42,6 @@ Porto Shop is based on Underscores https://underscores.me/, (C) 2012-2018 Ostap,
 @import "pages/contacts-page";
 @import "pages/services-page";
 @import "pages/blog-page";
+@import "pages/single-page";
+@import "pages/404-page";
 // ======================= //

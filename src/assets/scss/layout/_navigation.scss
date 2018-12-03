@@ -2,6 +2,11 @@ nav.primary-nav {
   background: url("assets/images/nav-bg.png");
   background-size: cover;
   background-repeat: no-repeat no-repeat;
+  .navbar-brand {
+    img {
+      max-width: 260px;
+    }
+  }
   .collapse {
     .phone-item {
       &:not(:first-child) {

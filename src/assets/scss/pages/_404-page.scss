@@ -1,0 +1,53 @@
+.not-found {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  .not-found-status {
+    h1 {
+      font-family: "LatoRegular", sans-serif;
+      font-size: 10em;
+      color: #2d77bd;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+  }
+  .not-found-block {
+    h2 {
+      font-family: "LatoRegular", sans-serif;
+      font-size: 3em;
+      color: #2d77bd;
+    }
+    p {
+      font-size: 1.8em;
+      font-family: "PtSans", sans-serif;
+      color: #000;
+    }
+    ol {
+      li {
+        font-family: "PtSans", sans-serif;
+        font-size: 1.1em;
+        color: #000;
+      }
+    }
+  }
+  @media screen and (max-width: 575px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    .not-found-status {
+      h1 {
+        font-size: 4em;
+        letter-spacing: 1px;
+      }
+    }
+    .not-found-block {
+      h2 {
+        font-size: 1.6em;
+      }
+      p {
+        font-size: 1.3em;
+      }
+      ol li {
+        font-size: 0.8em;
+      }
+    }
+  }
+}
