@@ -1,0 +1,36 @@
+.pagination {
+  font-family: "PtSans", sans-serif;
+  display: flex;
+  align-items: center;
+  .page-item {
+    &.active {
+      span {
+        padding: 2px 12px;
+        background-color: #2d77bd;
+        border-color: #2d77bd;
+        border-radius: 10px;
+        color: #fff;
+      }
+      .page-link {
+        &:hover {
+          background-color: #2d77bd;
+        }
+      }
+    }
+    .page-link {
+      font-weight: 700;
+      font-size: 22px;
+      border: unset;
+      color: #2d77bd;
+      i.fa {
+        font-size: 36px;
+      }
+      &:focus {
+        box-shadow: unset;
+      }
+      &:hover {
+        background-color: unset;
+      }
+    }
+  }
+}

@@ -39,6 +39,8 @@ footer {
         a {
           @include font("Arial", 13px, 600, 0.65px);
           color: #464646;
+          padding: 0;
+          display: inline;
           &:hover {
             text-decoration: none;
           }

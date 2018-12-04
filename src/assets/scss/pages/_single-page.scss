@@ -4,26 +4,35 @@
   background: url("assets/images/services-bg.png");
   background-size: auto;
   background-repeat: no-repeat no-repeat;
+  .post-info {
+    margin: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    background-color: rgba(5, 164, 216, 0.06);
+    .post-title {
+      h1 {
+        @include font("PtSans", 36px, 900, 2px);
+      }
+      color: #2d77bd;
+      padding: 15px 10px;
+      @media screen and (min-width: 576px) and (max-width: 767px) {
+        h1 {
+          font-size: 30px;
+        }
+      }
+      @media screen and (max-width: 575px) {
+        h1 {
+          font-size: 21px;
+        }
+      }
+    }
+  }
   .page-cover {
     position: relative;
     img {
       width: 100%;
-    }
-    .post-info {
-      margin: auto;
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      text-align: center;
-      display: flex;
-      align-items: center;
-      .post-title {
-        @include font("PtSans", 36px, 900, 2px);
-        color: #fff;
-        text-shadow: #474747 3px 5px 2px;
-      }
+      height: auto;
     }
   }
   .main-content {
@@ -34,6 +43,28 @@
       font-weight: 300;
       letter-spacing: 1px;
       padding: 50px 20px 60px 20px;
+      a[rel="prev"] {
+        left: 5%;
+      }
+      a[rel="next"] {
+        right: 5%;
+      }
+      a[rel="prev"],
+      a[rel="next"] {
+        position: absolute;
+        bottom: -18px;
+        img {
+          transition: all 0.7s ease-in-out;
+          border-radius: 50%;
+        }
+        &:hover {
+          img {
+            transform: scale(1.08);
+            box-shadow: 0 24px 24px rgba(0, 0, 0, 0.2),
+              0 0 24px rgba(0, 0, 0, 0.12);
+          }
+        }
+      }
       p {
         font-size: 17px;
         color: #000;

@@ -225,13 +225,13 @@ nav.secondary-nav {
   }
   .navbar-collapse {
     background: rgba(255, 255, 255, 0.93);
-    position: fixed;
+    position: fixed !important;
     top: 0px;
     right: 0px;
     left: 0px;
     z-index: 100;
     height: 100vh;
-    transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in-out !important;
     ul {
       transition: all 0.1s ease-in;
       height: 100%;

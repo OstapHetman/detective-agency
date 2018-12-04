@@ -83,6 +83,18 @@
     }
   }
 }
+@media screen and (max-width: 575px) {
+  .parent-pageid-114 {
+    #services-page {
+      .page-title {
+        h2 {
+          font-size: 24px;
+          letter-spacing: normal;
+        }
+      }
+    }
+  }
+}
 
 // All Services
 #all-services {
